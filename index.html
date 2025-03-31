@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wambugu Apples - Organic Farming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">Wambugu Apples</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="policies.html">Our Policies</a></li>
+            </ul>
+        </nav>
+        <div class="cart"><span class="cart-amount">$0.00</span></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Wambugu Apples: The Future of Kenyan Farming</h1>
+            <p>Transform your farm with high-yield, organically grown apples. Join the revolution today!</p>
+            <button class="cta-button" onclick="scrollToSection('why-choose')">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Why Choose Wambugu Apples -->
+    <section class="why-choose" id="why-choose">
+        <h2>Why Choose Wambugu Apples?</h2>
+        <div class="benefits">
+            <div class="benefit-card">
+                <img src="images/peche-large-300x300.webp" alt="Organic Farming">
+                <h3>Organic & Chemical-Free</h3>
+                <p>Our apples are grown without harmful chemicals, ensuring healthier produce.</p>
+            </div>
+            <div class="benefit-card">
+                <img src="images/double-a-vineyards-thomcord2-grapevines-300x300.jpg" alt="Year Round Harvest">
+                <h3>Year-Round Harvest</h3>
+                <p>Unlike traditional apples, Wambugu apples grow throughout the year.</p>
+            </div>
+            <div class="benefit-card">
+                <img src="images/ee1e5c_e07748bbb1a6437d95b1f7046ababcedmv2-300x300.webp" alt="High Yield">
+                <h3>High Yield & Profitability</h3>
+                <p>Farmers can harvest over 300 fruits per tree, boosting profitability.</p>
+            </div>
+            <div class="benefit-card">
+                <img src="images/Untitled.jpeg" alt="Climate Adaptive">
+                <h3>Climate Adaptive</h3>
+                <p>Thrives in Kenya’s diverse climates, from highlands to semi-arid regions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <p>From seedling to harvest, here’s how we ensure quality and sustainability.</p>
+        <div class="steps">
+            <div class="step-card">
+                <h3>1. Seedling Selection</h3>
+                <p>We source premium Wambugu apple seedlings bred for resilience and yield.</p>
+            </div>
+            <div class="step-card">
+                <h3>2. Organic Cultivation</h3>
+                <p>Using natural fertilizers and pest control, we nurture healthy trees.</p>
+            </div>
+            <div class="step-card">
+                <h3>3. Harvest & Distribution</h3>
+                <p>Apples are harvested year-round and delivered fresh to your table.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inside Our Farms -->
+    <section class="farm-gallery">
+        <h2>Inside Our Farms</h2>
+        <p>Explore our thriving orchards and innovative farming practices.</p>
+        <div class="gallery">
+            <img src="images/ourfarm0.jpg" alt="Wambugu Apple Farm" class="gallery-img">
+            <img src="images/ourfarm1.jpg" alt="Apple Seedlings Nursery" class="gallery-img">
+            <img src="images/ourfarm2.jpg" alt="Farmers Harvesting Apples" class="gallery-img">
+            <img src="images/double-a-vineyards-thomcord2-grapevines-300x300.jpg" alt="Irrigation System" class="gallery-img">
+        </div>
+    </section>
+
+    <!-- Best Selling Products -->
+    <section class="products">
+        <h2>Best Selling Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/Untitled.jpeg" alt="Wambugu Apples">
+                <h3>Wambugu Apples</h3>
+                <p>$10.00</p>
+                <button class="add-to-cart" onclick="addToCart('Wambugu Apples', 10)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/double-a-vineyards-thomcord2-grapevines-300x300.jpg" alt="Grapes">
+                <h3>Thomson’s Seedless Grapes</h3>
+                <p>$5.00</p>
+                <button class="add-to-cart" onclick="addToCart('Thomson’s Seedless Grapes', 5)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/Pomegranates.jpg" alt="Dragon Fruit">
+                <h3>Pomegranates</h3>
+                <p>$12.00</p>
+                <button class="add-to-cart" onclick="addToCart('Dragon Fruit', 12)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/mangoes.jpeg" alt="Mango">
+                <h3>Organic Mangoes</h3>
+                <p>$8.00</p>
+                <button class="add-to-cart" onclick="addToCart('Organic Mangoes', 8)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/hash.jpeg" alt="Avocado">
+                <h3>Hass Avocados</h3>
+                <p>$6.00</p>
+                <button class="add-to-cart" onclick="addToCart('Hass Avocados', 6)">Add to Cart</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Sustainability Promise -->
+    <section class="sustainability">
+        <h2>Our Sustainability Promise</h2>
+        <p>We’re committed to eco-friendly farming that benefits both people and the planet.</p>
+        <div class="sustainability-grid">
+            <div class="sustain-card">
+                <h3>Water Conservation</h3>
+                <p>Drip irrigation systems reduce water waste by up to 60%.</p>
+            </div>
+            <div class="sustain-card">
+                <h3>Soil Health</h3>
+                <p>Organic composting enriches soil without synthetic chemicals.</p>
+            </div>
+            <div class="sustain-card">
+                <h3>Carbon Footprint</h3>
+                <p>Local sourcing and minimal packaging lower emissions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Farmer Testimonials -->
+    <section class="testimonials">
+        <h2>What Farmers Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"Switching to Wambugu apples has transformed my farm. I now earn triple what I used to!"</p>
+                <h4>— John Mwangi, Nyeri</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"I love how these apples grow all year round. It ensures a steady income for my family."</p>
+                <h4>— Grace Wanjiku, Kiambu</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"The support from Organic Store made transitioning to organic farming seamless."</p>
+                <h4>— Peter Kamau, Nakuru</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to start farming with us? Reach out today!</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Organic Store</h3>
+                <p>Bringing the best of Kenyan organic farming to your table.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@organicstore.co.ke</p>
+                <p>Phone: +254 123 456 789</p>
+                <p>Address: P.O. Box 123, Nairobi, Kenya</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Wambugu Farm. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
